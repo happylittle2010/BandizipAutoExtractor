@@ -79,6 +79,6 @@ Name: "{group}\Bandizip Auto Extractor"; Filename: "{app}\BandizipAutoExtractor.
 Name: "{group}\{cm:UninstallProgram,Bandizip Auto Extractor}"; Filename: "{uninstallexe}"
 Name: "{autodesktop}\Bandizip Auto Extractor"; Filename: "{app}\BandizipAutoExtractor.exe"; Tasks: desktopicon
 
-; [Run]
-; Filename: "{app}\BandizipAutoExtractor.exe"; Description: "{cm:LaunchProgram,Bandizip Auto Extractor}"; Flags: nowait postinstall skipifsilent
+[UninstallDelete]
+Type: dir; Name: "{userappdata}\.BandizipAutoExtractor"
 
